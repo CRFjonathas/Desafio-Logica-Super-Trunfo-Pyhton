@@ -112,16 +112,16 @@ match opcao:
         print(f"\nCARTA {1 if densidade_populacional_1 < densidade_populacional_2 else 2} VENCEU!")
 
     case 6:
-        print("\n>>> POPULAÇÃO <<<\n")
-        print(f"CARTA 1 ({nome_1}): {populacao_1}")
-        print(f"CARTA 2 ({nome_2}): {populacao_2}")
-        print(f"\nCARTA {1 if populacao_1 > populacao_2 else 2} VENCEU!")
-
-    case 7:
         print("\n>>> PIB PER CAPITA <<<\n")
-        print(f"CARTA 1 ({nome_1}): {pib_per_capita_1}")
-        print(f"CARTA 2 ({nome_2}): {pib_per_capita_2}")
+        print(f"CARTA 1 ({nome_1}): {pib_per_capita_1:,.2f}")
+        print(f"CARTA 2 ({nome_2}): {pib_per_capita_2:,.2f}")
         print(f"\nCARTA {1 if pib_per_capita_1 > pib_per_capita_2 else 2} VENCEU!")
+    
+    case 7:
+        print("\n>>> SUPER PODER <<<\n")
+        print(f"CARTA 1 ({nome_1}): {super_poder_1:.2f}")
+        print(f"CARTA 2 ({nome_2}): {super_poder_2:.2f}")
+        print(f"\nCARTA {1 if super_poder_1 > super_poder_2 else 2} VENCEU!")
     
     case 0:
         print("\nPROGRAMA ENCERRADO.")
